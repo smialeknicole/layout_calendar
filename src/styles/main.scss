@@ -9,7 +9,7 @@ body {
 $gap: 1px;
 $day-size: 100px;
 $calendar-width: calc(7 * $day-size + 6 * $gap);
-$space: $day-size + $gap;
+$column: $day-size + $gap;
 
 .calendar {
   display: flex;
@@ -27,12 +27,12 @@ $space: $day-size + $gap;
   background-color: #eee;
   border: 1px solid black;
   box-sizing: border-box;
+  transition: 0.5s;
+  transform: translateY(-20px);
 }
 
 .calendar__day:hover {
   background-color: #ffbfcb;
-  transition: 0.5s;
-  transform: translateY(-20px);
   cursor: pointer;
 }
 
@@ -46,12 +46,12 @@ $space: $day-size + $gap;
 
 $days: (
   mon: 0,
-  tue: 1 * $space,
-  wed: 2 * $space,
-  thu: 3 * $space,
-  fri: 4 * $space,
-  sat: 5 * $space,
-  sun: 6 * $space,
+  tue: 1 * $column,
+  wed: 2 * $column,
+  thu: 3 * $column,
+  fri: 4 * $column,
+  sat: 5 * $column,
+  sun: 6 * $column,
 );
 
 @each $day, $space in $days {
