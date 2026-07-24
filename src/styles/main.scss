@@ -14,7 +14,7 @@ $column: $day-size + $gap;
 .calendar {
   display: flex;
   flex-wrap: wrap;
-  gap: 1px;
+  gap: $gap;
   font-family: Arial, sans-serif;
   font-size: 30px;
   width: $calendar-width;
