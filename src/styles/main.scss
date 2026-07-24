@@ -28,12 +28,12 @@ $column: $day-size + $gap;
   border: 1px solid black;
   box-sizing: border-box;
   transition: 0.5s;
-  transform: translateY(-20px);
 }
 
 .calendar__day:hover {
   background-color: #ffbfcb;
   cursor: pointer;
+  transform: translateY(-20px);
 }
 
 .calendar__day::before {
